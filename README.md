@@ -1,8 +1,8 @@
 # Quantum Contrastive Fusion Model
-## Abstract
-This project presents a novel approach to classification in medical imaging using Quantum Contrastive Fusion, a model designed to address the challenges of minimal labeled data in medical datasets. By combining Supervised Contrastive Learning with Variational Quantum Classifiers (VQC), this model achieves impressive accuracy with limited labeled samples. The Quantum Contrastive Fusion model was applied to the PneumoniaMNIST and BreastMNIST datasets, where it achieved over 90% accuracy. Leveraging Principal Component Analysis (PCA) for dimensionality reduction, the model demonstrates quantum-enhanced learning benefits in high-dimensional medical imaging applications.
 
-## Table of Contents
+## Abstract
+This project presents a novel approach to classification in medical imaging using **Quantum Contrastive Fusion**, a model designed to address the challenges of minimal labeled data in medical datasets. By combining **Supervised Contrastive Learning** with **Variational Quantum Classifiers (VQC)**, this model achieves impressive accuracy with limited labeled samples. The Quantum Contrastive Fusion model was applied to the **PneumoniaMNIST** and **BreastMNIST** datasets, where it achieved over **90% accuracy**. Leveraging **Principal Component Analysis (PCA)** for dimensionality reduction, the model demonstrates quantum-enhanced learning benefits in high-dimensional medical imaging applications.
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Model Overview](#model-overview)
@@ -11,12 +11,14 @@ This project presents a novel approach to classification in medical imaging usin
 - [Quantum Contrastive Fusion](#quantum-contrastive-fusion)
 - [Setup and Requirements](#setup-and-requirements)
 - [Usage](#usage)
-- [Experiments and Results](#experiments-and-results)
+- [Real-World Impact and Problem Solving](#real-world-impact-and-problem-solving)
+- [Quantitative Benefits](#quantitative-benefits)
 - [Conclusion](#conclusion)
+- [How to Fork the Project](#how-to-fork-the-project)
 - [References](#references)
-  
+
 ## Introduction
-Medical imaging is a critical area in healthcare, yet it is often characterized by minimal labeled data due to high annotation costs and limited availability of specialists. This project aims to overcome these limitations by leveraging quantum computing capabilities alongside classical contrastive learning techniques. 
+Medical imaging is a critical area in healthcare, yet it is often characterized by minimal labeled data due to high annotation costs and limited availability of specialists. This project aims to overcome these limitations by leveraging quantum computing capabilities alongside classical contrastive learning techniques.
 
 **Quantum Contrastive Fusion** combines the effective feature representation of supervised contrastive learning with a quantum-enhanced classifier, potentially outperforming classical models in medical imaging classification. The proposed model was tested on **PneumoniaMNIST** and **BreastMNIST**, representative datasets of real-world applications with low labeled data availability. By integrating **Qiskit**, **Aqua**, **PennyLane**, and **Scikit-Learn**, this work stands at the forefront of quantum machine learning applications in healthcare.
 
@@ -33,14 +35,20 @@ The **Variational Quantum Classifier (VQC)** serves as the core quantum model wi
 In **Quantum Contrastive Fusion**, contrastive learning is applied as a pre-training step, allowing the model to create rich feature representations. Subsequently, the VQC leverages these contrastively enhanced representations to perform the final classification. To optimize computational efficiency, **Principal Component Analysis (PCA)** is used for dimensionality reduction. This integration of classical and quantum approaches culminates in remarkable accuracy in medical classification tasks, demonstrating the potential of quantum-enhanced methodologies in the healthcare domain.
 
 ## Setup and Requirements
-[List the necessary packages, dependencies, and installation instructions for your project.]
-
-
-## Setup and Requirements
 To reproduce the Quantum Contrastive Fusion model, the following libraries are essential:
 
 - **Python 3.7+**
 - **Qiskit**: For building and running the quantum circuits.
+- **NumPy**: For numerical operations.
+- **Scikit-Learn**: For traditional machine learning tools.
+- **Aqua**: For quantum algorithms.
+- **PennyLane**: For hybrid quantum-classical machine learning.
+
+### Installation
+To install the required libraries, run the following command:
+
+pip install qiskit numpy scikit-learn aqua pennylane
+
 
 ### Installation
 To install the required libraries, run the following command:
