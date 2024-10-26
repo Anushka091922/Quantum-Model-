@@ -3,17 +3,17 @@
 This project presents a novel approach to classification in medical imaging using Quantum Contrastive Fusion, a model designed to address the challenges of minimal labeled data in medical datasets. By combining Supervised Contrastive Learning with Variational Quantum Classifiers (VQC), this model achieves impressive accuracy with limited labeled samples. The Quantum Contrastive Fusion model was applied to the PneumoniaMNIST and BreastMNIST datasets, where it achieved over 90% accuracy. Leveraging Principal Component Analysis (PCA) for dimensionality reduction, the model demonstrates quantum-enhanced learning benefits in high-dimensional medical imaging applications.
 
 ## Table of Contents
-Abstract
-Introduction
-Model Overview
-Supervised Contrastive Learning
-Variational Quantum Classifier (VQC)
-Quantum Contrastive Fusion
-Setup and Requirements
-Usage
-Experiments and Results
-Conclusion
-References
+## Table of Contents
+- [Introduction](#introduction)
+- [Model Overview](#model-overview)
+- [Supervised Contrastive Learning](#supervised-contrastive-learning)
+- [Variational Quantum Classifier (VQC)](#variational-quantum-classifier-vqc)
+- [Quantum Contrastive Fusion](#quantum-contrastive-fusion)
+- [Setup and Requirements](#setup-and-requirements)
+- [Usage](#usage)
+- [Experiments and Results](#experiments-and-results)
+- [Conclusion](#conclusion)
+- [References](#references)
 Introduction
 Medical imaging is a critical area in healthcare, yet it is often characterized by minimal labeled data due to high annotation costs and limited availability of specialists. This project aims to overcome these limitations by leveraging quantum computing capabilities with classical contrastive learning techniques. Quantum Contrastive Fusion combines supervised contrastive learning’s effective feature representation with a quantum-enhanced classifier, potentially outperforming classical models in medical imaging classification.
 
