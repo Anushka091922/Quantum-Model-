@@ -1,6 +1,6 @@
 # Quantum Contrastive Fusion Model
 
-### PneumoniaMNIST daatset:
+### PneumoniaMNIST datset:
 
 https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1
 
