@@ -1,6 +1,11 @@
 # Quantum Contrastive Fusion Model
 
+### PneumoniaMNIST daatset:
+
 https://zenodo.org/records/10519652/files/pneumoniamnist.npz?download=1
+
+### BreastMNIST dataset:
+
 https://zenodo.org/records/10519652/files/breastmnist_224.npz?download=1
 
 ![image](https://github.com/user-attachments/assets/16471958-cadf-472f-9277-db307b496904)
