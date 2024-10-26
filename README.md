@@ -14,20 +14,26 @@ This project presents a novel approach to classification in medical imaging usin
 - [Experiments and Results](#experiments-and-results)
 - [Conclusion](#conclusion)
 - [References](#references)
-Introduction
-Medical imaging is a critical area in healthcare, yet it is often characterized by minimal labeled data due to high annotation costs and limited availability of specialists. This project aims to overcome these limitations by leveraging quantum computing capabilities with classical contrastive learning techniques. Quantum Contrastive Fusion combines supervised contrastive learning’s effective feature representation with a quantum-enhanced classifier, potentially outperforming classical models in medical imaging classification.
+  
+## Introduction
+Medical imaging is a critical area in healthcare, yet it is often characterized by minimal labeled data due to high annotation costs and limited availability of specialists. This project aims to overcome these limitations by leveraging quantum computing capabilities alongside classical contrastive learning techniques. 
 
-The proposed model was tested on PneumoniaMNIST and BreastMNIST, representative of real-world applications with low labeled data availability. Integrating Qiskit, Aqua, PennyLane, and Scikit-Learn, this work is at the forefront of quantum machine learning applications in healthcare.
+**Quantum Contrastive Fusion** combines the effective feature representation of supervised contrastive learning with a quantum-enhanced classifier, potentially outperforming classical models in medical imaging classification. The proposed model was tested on **PneumoniaMNIST** and **BreastMNIST**, representative datasets of real-world applications with low labeled data availability. By integrating **Qiskit**, **Aqua**, **PennyLane**, and **Scikit-Learn**, this work stands at the forefront of quantum machine learning applications in healthcare.
 
-Model Overview
-Supervised Contrastive Learning
-Contrastive learning is employed in this model to optimize feature representations by pulling similar samples closer and pushing dissimilar samples further apart in the embedding space. This method is highly effective for learning from limited labels, as it utilizes all labeled samples per batch for representation enhancement, thus amplifying the quantum model’s discriminatory power.
+## Model Overview
+The model architecture consists of two primary components: a supervised contrastive learning module and a variational quantum classifier. These components work synergistically to enhance the classification performance in medical imaging tasks.
 
-Variational Quantum Classifier (VQC)
-The Variational Quantum Classifier (VQC) operates as the core quantum model, capitalizing on Qiskit’s variational circuit-based learning. This classifier leverages parameterized quantum circuits to adaptively learn data distributions, making it effective in high-dimensional spaces where classical models often struggle.
+## Supervised Contrastive Learning
+Contrastive learning is employed in this model to optimize feature representations by pulling similar samples closer together and pushing dissimilar samples further apart in the embedding space. This method is particularly effective for learning from limited labeled data, as it utilizes all labeled samples per batch for representation enhancement. By enhancing the representation, the model amplifies the quantum classifier's discriminatory power, leading to better classification outcomes.
 
-Quantum Contrastive Fusion
-In Quantum Contrastive Fusion, contrastive learning is applied as a pre-training step, while the VQC takes advantage of the contrastively enhanced representations to perform final classification. The dimensionality is reduced using Principal Component Analysis (PCA), optimizing the model’s computational efficiency. By combining the classical and quantum approaches, the model achieves remarkable accuracy in medical classification tasks.
+## Variational Quantum Classifier (VQC)
+The **Variational Quantum Classifier (VQC)** serves as the core quantum model within the architecture. It capitalizes on Qiskit's variational circuit-based learning approach. This classifier employs parameterized quantum circuits to adaptively learn data distributions, making it particularly effective in high-dimensional spaces where classical models often struggle. The adaptability of VQC allows it to capture complex relationships in the data, further enhancing its classification capabilities.
+
+## Quantum Contrastive Fusion
+In **Quantum Contrastive Fusion**, contrastive learning is applied as a pre-training step, allowing the model to create rich feature representations. Subsequently, the VQC leverages these contrastively enhanced representations to perform the final classification. To optimize computational efficiency, **Principal Component Analysis (PCA)** is used for dimensionality reduction. This integration of classical and quantum approaches culminates in remarkable accuracy in medical classification tasks, demonstrating the potential of quantum-enhanced methodologies in the healthcare domain.
+
+## Setup and Requirements
+[List the necessary packages, dependencies, and installation instructions for your project.]
 
 Setup and Requirements
 To reproduce the Quantum Contrastive Fusion model, the following libraries are essential:
