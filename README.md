@@ -10,11 +10,9 @@ This project presents a novel approach to classification in medical imaging usin
 - [Variational Quantum Classifier (VQC)](#variational-quantum-classifier-vqc)
 - [Quantum Contrastive Fusion](#quantum-contrastive-fusion)
 - [Setup and Requirements](#setup-and-requirements)
-- [Usage](#usage)
 - [Real-World Impact and Problem Solving](#real-world-impact-and-problem-solving)
 - [Quantitative Benefits](#quantitative-benefits)
 - [Conclusion](#conclusion)
-- [How to Fork the Project](#how-to-fork-the-project)
 - [References](#references)
 
 ## Introduction
@@ -28,11 +26,23 @@ The model architecture consists of two primary components: a supervised contrast
 ## Supervised Contrastive Learning
 Contrastive learning is employed in this model to optimize feature representations by pulling similar samples closer together and pushing dissimilar samples further apart in the embedding space. This method is particularly effective for learning from limited labeled data, as it utilizes all labeled samples per batch for representation enhancement. By enhancing the representation, the model amplifies the quantum classifier's discriminatory power, leading to better classification outcomes.
 
+### Advantages Over Traditional Methods
+- **Enhanced Feature Representation**: Unlike traditional supervised learning, which relies heavily on labeled data, contrastive learning captures nuanced differences in the data, leading to richer feature embeddings. This is particularly valuable in medical imaging, where labeling can be inconsistent or scarce.
+- **Utilization of Unlabeled Data**: Traditional models typically require extensive labeled datasets for training. Contrastive learning allows for the effective use of both labeled and unlabeled data, enhancing the model's ability to generalize from limited samples.
+
 ## Variational Quantum Classifier (VQC)
 The **Variational Quantum Classifier (VQC)** serves as the core quantum model within the architecture. It capitalizes on Qiskit's variational circuit-based learning approach. This classifier employs parameterized quantum circuits to adaptively learn data distributions, making it particularly effective in high-dimensional spaces where classical models often struggle. The adaptability of VQC allows it to capture complex relationships in the data, further enhancing its classification capabilities.
 
+### Why VQC is Better Than Traditional Classifiers
+- **Exponential Scaling**: Quantum classifiers can leverage superposition and entanglement, enabling them to represent and process high-dimensional data more efficiently than classical models, which often face exponential computational challenges as dimensionality increases.
+- **Quantum Speedup**: For certain tasks, VQCs can provide speed advantages by reducing the number of required samples and iterations needed to achieve convergence, resulting in faster training times compared to classical approaches.
+
 ## Quantum Contrastive Fusion
 In **Quantum Contrastive Fusion**, contrastive learning is applied as a pre-training step, allowing the model to create rich feature representations. Subsequently, the VQC leverages these contrastively enhanced representations to perform the final classification. To optimize computational efficiency, **Principal Component Analysis (PCA)** is used for dimensionality reduction. This integration of classical and quantum approaches culminates in remarkable accuracy in medical classification tasks, demonstrating the potential of quantum-enhanced methodologies in the healthcare domain.
+
+### Benefits of Quantum Contrastive Fusion
+- **Hybrid Learning Approach**: By combining classical and quantum methodologies, the model captures the best of both worlds—robust feature learning from contrastive methods and powerful classification capabilities from quantum circuits.
+- **Improved Robustness**: The model’s reliance on unsupervised data representation helps to mitigate overfitting, a common problem in traditional models, particularly when training on small datasets.
 
 ## Setup and Requirements
 To reproduce the Quantum Contrastive Fusion model, the following libraries are essential:
@@ -43,7 +53,6 @@ To reproduce the Quantum Contrastive Fusion model, the following libraries are e
 - **Scikit-Learn**: For traditional machine learning tools.
 - **Aqua**: For quantum algorithms.
 - **PennyLane**: For hybrid quantum-classical machine learning.
-
 
 ## Real-World Impact and Problem Solving
 ## Challenges Addressed
